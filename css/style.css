@@ -10,7 +10,6 @@
 
 .fa-bolt {
   color: #4e4e44;
-  margin-left: 10%;
   font-size: 2.0em;
   padding: 15px;
 }
@@ -18,31 +17,28 @@
 .size {
   font-size: 1.5em;
 }
+
 .header__box1 a {
   background-color: #74cfae;
   color: #fff;
   font-size: 12px;
   padding: 14px 12px;
-  margin-left: 65%;
 }
 
 /*main-div-theme*/
 .theme {
   padding: 250px; 
-  display: inline-block;
 }
 
 .text__bolt {
   font-size: 90px;
   font-weight: 700;
   color: #74cfae;
-  text-align: center;
 }
 
 .text__free {
   font-size: 24px;
   color: #c0c0c0;
-  text-align: center;
   padding-top: 20px;
 }
 /*theme-------------------------------------*/
@@ -50,20 +46,20 @@
   background-color: #74cfae;
 }
 
-.clearfix {
-  display: block;
-  content: "";
-  clear: both;
+.phone__box {
+  height: 295px;
+  width: 208px;
+  padding-top: 50px; 
+  padding-left: 300px; 
+  float: left;
 }
 
-.phone {
-  padding-top: 50px;
-  float: left;
-  padding-left: 80px;
-}
 
 .box1text {
-  padding: 100px;
+  margin: 0 auto;
+  width: 550px;
+  padding: 50px;
+  float: left;
 }
 
 .text__what {
@@ -76,8 +72,8 @@
 .text__lorem1 {
   font-size: 20px;
   color: #fff;
-  text-align: right;
   text-align: center;
+  word-break: break-all;
 }
 
 /*main2-----------------------------------*/
@@ -86,20 +82,20 @@
   text-align: center;
   margin: 100px;
   margin-bottom: 40px;
+  width: 200px;
 }
 
 .box2__2 {
   padding-top: 50px;
   padding-bottom: 70px;
   width: 80%;
-  text-align: center;
+  margin: 0 auto;
 }
 
 .text__lorem2 {
   font-size: 12px;
   display: inline-block;
   width: 400px;
-  text-align: center;
 }
 
 .main__box2 a {
@@ -114,7 +110,6 @@
 
 .main__box3 {
   background-color: #4e4e44;
-  height: 350px;
 }
 
 .text__our {
@@ -129,22 +124,43 @@
   color: #fff;
 }
 
-.main__box4 i {
-  color: #74cfae;
-}
 
-.box3__img {
-  float: left;
+.box3__3 {
+  display: flex;
+  justify-content: center;
   padding-bottom: 100px;
-  padding-left: 180px;
 }
 
+.box3__img:not(:first-of-type) {
+  margin-left: 180px;
+}
 
 /*box4--------------------------------*/
 
 .main__box4 {
-  margin: 200px;
+  margin-top: 200px;
+  margin-bottom: 200px;
 }
+
+.icon__box {
+  display: flex;
+  justify-content: center;
+}
+
+.main__box4 i {
+  color: #74cfae;
+  font-size: 2.5em;
+
+}
+
+.icon {
+  background-color: #fff;
+  width: 185px;
+  height: 100px;
+}
+
+
+
 
 /*footer-------------------------------*/
 .footer__1 {
@@ -153,9 +169,20 @@
 
 .footer__1 p {
   color: #fff;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
+
 /*共通*/
 .inner {
   text-align: center;
   width: 100%;
 }
+
+
+.clearfix::after {
+  display: block;
+  content: "";
+  clear: both;
+}
+

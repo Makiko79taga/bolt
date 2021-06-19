@@ -11,11 +11,17 @@
 .fa-bolt {
   color: #4e4e44;
   font-size: 2.0em;
-  padding: 15px;
 }
 
 .size {
   font-size: 1.5em;
+}
+
+.inner__header {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  padding: 15px;
 }
 
 .header__box1 a {
@@ -25,15 +31,22 @@
   padding: 14px 12px;
 }
 
-/*main-div-theme*/
+.header__box1 a:hover {
+  transition: all .3s;
+  color: #333;
+}
+
+/*theme---------------------------------*/
 .theme {
-  padding: 250px; 
+  padding-top: 250px;
+  padding-bottom: 250px;
 }
 
 .text__bolt {
   font-size: 90px;
   font-weight: 700;
   color: #74cfae;
+  font-family: "Lato";
 }
 
 .text__free {
@@ -41,7 +54,7 @@
   color: #c0c0c0;
   padding-top: 20px;
 }
-/*theme-------------------------------------*/
+/*secotion-------------------------------------*/
 .section__box1 {
   background-color: #74cfae;
 }
@@ -50,16 +63,14 @@
   height: 295px;
   width: 208px;
   padding-top: 50px; 
-  padding-left: 300px; 
   float: left;
 }
 
 
 .box1text {
-  margin: 0 auto;
-  width: 550px;
+  margin: 0 0 0 auto;
+  width: 565px;
   padding: 50px;
-  float: left;
 }
 
 .text__what {
@@ -67,6 +78,8 @@
   color: #fff;
   text-align: center;
   padding-bottom: 35px;
+  font-family: "Raleway";
+
 }
 
 .text__lorem1 {
@@ -79,11 +92,21 @@
 /*main2-----------------------------------*/
 
 .main__box2 img {
-  text-align: center;
-  margin: 100px;
+  margin: 50px;
   margin-bottom: 40px;
   width: 200px;
+  opacity: 0.7;
 }
+
+.main__box2 img:hover {
+  opacity: 1;
+  transition: all 0.3s;
+}
+
+.img__box {
+  font-size: 0;
+}
+
 
 .box2__2 {
   padding-top: 50px;
@@ -98,12 +121,17 @@
   width: 400px;
 }
 
-.main__box2 a {
+.Email {
   font-size: 12px;
   padding: 14px 12px;
   background-color: #74cfae;
   color: #fff;
   margin-left: 90px;
+}
+
+.Email:hover {
+  color: #333;
+  transition: all .3s;
 }
 
 /*main3----------------------------------*/
@@ -115,9 +143,9 @@
 .text__our {
   font-size: 30px;
   color: #333;
-  text-align: center;
   padding-top: 40px;
   padding-bottom: 60px;
+  font-family: "Raleway";
 }
 
 .main__box3 p {
@@ -154,9 +182,13 @@
 }
 
 .icon {
-  background-color: #fff;
   width: 185px;
-  height: 100px;
+  padding: 30px 0;
+}
+
+.icon:hover {
+  background-color: #fff;
+  transition: all .5s;
 }
 
 
@@ -168,6 +200,8 @@
 }
 
 .footer__1 p {
+  display: flex;
+  justify-content: flex-end;
   color: #fff;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -176,7 +210,8 @@
 /*共通*/
 .inner {
   text-align: center;
-  width: 100%;
+  width: 1100px;
+  margin: 0 auto;
 }
 
 

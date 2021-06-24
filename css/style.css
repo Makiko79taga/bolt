@@ -1,11 +1,13 @@
+
 .bolt {
   background-color: #f2f2f2;
 }
 /*header---------------------------------*/
-.header__box1 {
+.header {
   position: fixed;
   background-color: #fff;
   width: 100%;
+  z-index: 1;
 }
 
 .fa-bolt {
@@ -22,16 +24,17 @@
   align-content: center;
   justify-content: space-between;
   padding: 15px;
+
 }
 
-.header__box1 a {
+.header a {
   background-color: #74cfae;
   color: #fff;
   font-size: 12px;
   padding: 14px 12px;
 }
 
-.header__box1 a:hover {
+.header a:hover {
   transition: all .3s;
   color: #333;
 }
@@ -55,11 +58,11 @@
   padding-top: 20px;
 }
 /*secotion-------------------------------------*/
-.section__box1 {
+.section {
   background-color: #74cfae;
 }
 
-.phone__box {
+.phone__img {
   height: 295px;
   width: 208px;
   padding-top: 50px; 
@@ -67,7 +70,7 @@
 }
 
 
-.box1text {
+.section__text {
   margin: 0 0 0 auto;
   width: 565px;
   padding: 50px;
@@ -79,26 +82,30 @@
   text-align: center;
   padding-bottom: 35px;
   font-family: "Raleway";
-
 }
 
-.text__lorem1 {
+.text__theme {
   font-size: 20px;
   color: #fff;
   text-align: center;
   word-break: break-all;
 }
 
+  
+
 /*main2-----------------------------------*/
 
-.main__box2 img {
+.main__article {
+  text-align: center;
+}
+
+.main__article img {
   margin: 50px;
   margin-bottom: 40px;
-  width: 200px;
   opacity: 0.7;
 }
 
-.main__box2 img:hover {
+.main__article img:hover {
   opacity: 1;
   transition: all 0.3s;
 }
@@ -108,14 +115,14 @@
 }
 
 
-.box2__2 {
+.bottom__article {
   padding-top: 50px;
   padding-bottom: 70px;
   width: 80%;
   margin: 0 auto;
 }
 
-.text__lorem2 {
+.text__article {
   font-size: 12px;
   display: inline-block;
   width: 400px;
@@ -136,11 +143,11 @@
 
 /*main3----------------------------------*/
 
-.main__box3 {
+.main__section {
   background-color: #4e4e44;
 }
 
-.text__our {
+.text__section {
   font-size: 30px;
   color: #333;
   padding-top: 40px;
@@ -148,34 +155,34 @@
   font-family: "Raleway";
 }
 
-.main__box3 p {
+.main__section p {
   color: #fff;
 }
 
 
-.box3__3 {
+.section__box {
   display: flex;
   justify-content: center;
   padding-bottom: 100px;
 }
 
-.box3__img:not(:first-of-type) {
+.section__img:not(:first-of-type) {
   margin-left: 180px;
 }
 
 /*box4--------------------------------*/
 
-.main__box4 {
+.main__nav {
   margin-top: 200px;
   margin-bottom: 200px;
 }
 
-.icon__box {
+.icon__nav {
   display: flex;
   justify-content: center;
 }
 
-.main__box4 i {
+.main__nav i {
   color: #74cfae;
   font-size: 2.5em;
 
@@ -195,11 +202,11 @@
 
 
 /*footer-------------------------------*/
-.footer__1 {
+.footer {
   background-color: #74cfae;
 }
 
-.footer__1 p {
+.footer p {
   display: flex;
   justify-content: flex-end;
   color: #fff;
@@ -220,4 +227,3 @@
   content: "";
   clear: both;
 }
-

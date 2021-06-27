@@ -55,18 +55,18 @@
 .text__free {
   font-size: 24px;
   color: #c0c0c0;
-  padding-top: 20px;
+  margin-top: 20px;
 }
 
 /*secotion-------------------------------------*/
 .section {
   background-color: #74cfae;
+  padding-top: 50px;
 }
 
 .phone__img {
   height: 295px;
   width: 208px;
-  padding-top: 50px; 
   float: left;
 }
 
@@ -74,14 +74,13 @@
 .section__text {
   margin: 0 0 0 auto;
   width: 565px;
-  padding: 50px;
 }
 
 .text__what {
   font-size: 24px;
   color: #fff;
   text-align: center;
-  padding-bottom: 35px;
+  margin-bottom: 35px;
   font-family: "Raleway";
 }
 
@@ -97,38 +96,46 @@
 /*main2-----------------------------------*/
 
 .main__article {
-  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 70px;
 }
 
-.main__article img {
-  margin: 50px;
-  margin-bottom: 40px;
+
+.img__box li {
+  margin-top: 80px;
+  margin-left: 100px;
+  float: left;
+}
+
+.img__box li:nth-child(-n+3) {
+  margin-top: 0;
+}
+
+.img__box li:nth-child(3n+1) {
+  margin-left: 0;
+}
+
+.img__box img {
   opacity: 0.7;
 }
 
-.main__article img:hover {
+.img__box img:hover {
   opacity: 1;
   transition: all 0.3s;
 }
 
-.img__box {
-  font-size: 0;
-}
-
 .text__article {
-  padding-top: 60px;
   font-size: 24px;
   font-family: "Raleway";
+  margin-bottom: 40px;
 }
 
 .bottom__article {
-  padding-top: 50px;
-  padding-bottom: 70px;
-  width: 80%;
-  margin: 0 auto;
+  margin-top: 50px;
 }
 
 .text__bottom {
+  margin-top: 90px;
   font-size: 12px;
   display: inline-block;
   width: 400px;
@@ -147,17 +154,19 @@
   transition: all .3s;
 }
 
+
 /*main3----------------------------------*/
 
 .main__section {
   background-color: #4e4e44;
+  padding-top: 40px;
+  padding-bottom: 100px;
 }
 
 .text__section {
   font-size: 30px;
   color: #333;
-  padding-top: 40px;
-  padding-bottom: 60px;
+  margin-bottom: 60px;
   font-family: "Raleway";
 }
 
@@ -169,7 +178,6 @@
 .section__box {
   display: flex;
   justify-content: center;
-  padding-bottom: 100px;
 }
 
 .section__img:not(:first-of-type) {
@@ -179,8 +187,8 @@
 /*box4--------------------------------*/
 
 .main__nav {
-  margin-top: 200px;
-  margin-bottom: 200px;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .icon__nav {
@@ -210,14 +218,15 @@
 /*footer-------------------------------*/
 .footer {
   background-color: #74cfae;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
 }
 
 .footer p {
   display: flex;
   justify-content: flex-end;
   color: #fff;
-  padding-top: 20px;
-  padding-bottom: 20px;
 }
 
 /*共通*/

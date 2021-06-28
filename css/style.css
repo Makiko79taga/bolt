@@ -4,6 +4,7 @@
 }
 /*header---------------------------------*/
 .header {
+  padding: 15px;
   position: fixed;
   background-color: #fff;
   width: 100%;
@@ -23,7 +24,6 @@
   display: flex;
   align-content: center;
   justify-content: space-between;
-  padding: 15px;
 
 }
 
@@ -32,16 +32,21 @@
   color: #fff;
   font-size: 12px;
   padding: 14px 12px;
+  transition: all 0.3s;
 }
 
 .header a:hover {
-  transition: all .3s;
+  transition: all 0.3s;
   color: #333;
 }
 
+
+
+  
+
 /*theme---------------------------------*/
 .theme {
-  padding-top: 250px;
+  padding-top: 320px;
   padding-bottom: 250px;
 }
 
@@ -49,7 +54,7 @@
   font-size: 90px;
   font-weight: 700;
   color: #74cfae;
-  font-family: "Lato";
+  font-family: "Raleway";
 }
 
 .text__free {
@@ -66,14 +71,15 @@
 
 .phone__img {
   height: 295px;
-  width: 208px;
+  width: 450px;
   float: left;
 }
 
 
 .section__text {
   margin: 0 0 0 auto;
-  width: 565px;
+  width: 100%;
+  line-height: 30px;
 }
 
 .text__what {
@@ -88,11 +94,12 @@
   font-size: 20px;
   color: #fff;
   text-align: center;
-  word-break: break-all;
+  word-break: break-all
 }
 
-  
 
+
+  
 /*main2-----------------------------------*/
 
 .main__article {
@@ -102,9 +109,10 @@
 
 
 .img__box li {
-  margin-top: 80px;
+  margin-top:80px;
   margin-left: 100px;
   float: left;
+  font-size: 0;
 }
 
 .img__box li:nth-child(-n+3) {
@@ -117,6 +125,7 @@
 
 .img__box img {
   opacity: 0.7;
+  transition: all 0.3s;
 }
 
 .img__box img:hover {
@@ -125,52 +134,53 @@
 }
 
 .text__article {
+  margin-bottom: 40px;
   font-size: 24px;
   font-family: "Raleway";
-  margin-bottom: 40px;
 }
 
-.bottom__article {
-  margin-top: 50px;
-}
 
 .text__bottom {
   margin-top: 90px;
+  margin-right: 90px;
+  width: 400px;
   font-size: 12px;
   display: inline-block;
-  width: 400px;
 }
 
-.Email {
+.bottom__article a {
   font-size: 12px;
   padding: 14px 12px;
   background-color: #74cfae;
   color: #fff;
-  margin-left: 90px;
+  transition: all .3s;
 }
 
-.Email:hover {
+.bottom__article a:hover {
   color: #333;
   transition: all .3s;
 }
+
+
 
 
 /*main3----------------------------------*/
 
 .main__section {
   background-color: #4e4e44;
-  padding-top: 40px;
+  padding-top: 70px;
   padding-bottom: 100px;
 }
 
 .text__section {
-  font-size: 30px;
-  color: #333;
   margin-bottom: 60px;
+  font-size: 30px;
+  color: #fff;
   font-family: "Raleway";
 }
 
 .main__section p {
+  margin-top: 15px;
   color: #fff;
 }
 
@@ -180,9 +190,11 @@
   justify-content: center;
 }
 
-.section__img:not(:first-of-type) {
+.section__box li:not(:first-of-type) {
   margin-left: 180px;
 }
+
+
 
 /*box4--------------------------------*/
 
@@ -202,14 +214,15 @@
 
 }
 
-.icon {
+.icon__nav li {
   width: 185px;
   padding: 30px 0;
+  transition: all 0.5s;
 }
 
-.icon:hover {
+.main__nav li:hover {
   background-color: #fff;
-  transition: all .5s;
+  transition: all 0.5s;
 }
 
 
@@ -229,7 +242,7 @@
   color: #fff;
 }
 
-/*共通*/
+/*共通-------------------------------------*/
 .inner {
   text-align: center;
   width: 1100px;

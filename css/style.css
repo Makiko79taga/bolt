@@ -38,6 +38,7 @@
 .header a:hover {
   transition: all 0.3s;
   color: #333;
+  cursor: pointer;
 }
 
 
@@ -131,6 +132,7 @@
 .img__box img:hover {
   opacity: 1;
   transition: all 0.3s;
+  cursor: pointer;
 }
 
 .text__article {
@@ -138,21 +140,21 @@
   font-family: "Raleway";
 }
 
+.bottom__article {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
 
 .text__bottom {
   margin-top: 90px;
-  margin-right: 90px;
   width: 400px;
   font-size: 12px;
-  display: inline-block;
+  line-height: 15px;
 }
-
-.bottom__article {
-  margin-top: 40px;
-}
-
 
 .bottom__article a {
+  margin-left: 90px;
   font-size: 12px;
   padding: 14px 12px;
   background-color: #74cfae;
@@ -163,6 +165,14 @@
 .bottom__article a:hover {
   color: #333;
   transition: all .3s;
+  cursor: pointer;
+}
+
+.clearfix {
+  margin-top: 40px;
+  content: "";
+  display: block;
+  clear: both;
 }
 
 

@@ -58,9 +58,9 @@
 }
 
 .text__free {
+  margin-top: 20px;
   font-size: 24px;
   color: #c0c0c0;
-  margin-top: 20px;
 }
 
 /*secotion-------------------------------------*/
@@ -86,11 +86,11 @@
   font-size: 24px;
   color: #fff;
   text-align: center;
-  margin-bottom: 35px;
   font-family: "Raleway";
 }
 
 .text__theme {
+  margin-top: 35px;
   font-size: 20px;
   color: #fff;
   text-align: center;
@@ -134,7 +134,6 @@
 }
 
 .text__article {
-  margin-bottom: 40px;
   font-size: 24px;
   font-family: "Raleway";
 }
@@ -147,6 +146,11 @@
   font-size: 12px;
   display: inline-block;
 }
+
+.bottom__article {
+  margin-top: 40px;
+}
+
 
 .bottom__article a {
   font-size: 12px;
@@ -208,7 +212,7 @@
   justify-content: center;
 }
 
-.main__nav i {
+.main__nav a {
   color: #74cfae;
   font-size: 2.5em;
 
@@ -223,6 +227,7 @@
 .main__nav li:hover {
   background-color: #fff;
   transition: all 0.5s;
+  cursor: pointer;
 }
 
 

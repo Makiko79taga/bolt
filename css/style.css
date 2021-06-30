@@ -47,7 +47,7 @@
 
 /*theme---------------------------------*/
 .theme {
-  padding-top: 320px;
+  padding-top: 250px; /*元250px*/
   padding-bottom: 250px;
 }
 
@@ -73,13 +73,12 @@
 .phone__img {
   height: 295px;
   width: 450px;
-  float: left;
 }
 
 
 .section__text {
   margin: 0 0 0 auto;
-  width: 100%;
+  width: 88%;
   line-height: 30px;
 }
 
@@ -96,6 +95,10 @@
   color: #fff;
   text-align: center;
   word-break: break-all
+}
+
+.phone__box {
+  display: flex;
 }
 
 
@@ -168,11 +171,9 @@
   cursor: pointer;
 }
 
-.clearfix {
+.article__img {
+  display: flex;
   margin-top: 40px;
-  content: "";
-  display: block;
-  clear: both;
 }
 
 
@@ -187,7 +188,6 @@
 }
 
 .text__section {
-  margin-bottom: 60px;
   font-size: 30px;
   color: #fff;
   font-family: "Raleway";
@@ -200,6 +200,7 @@
 
 
 .section__box {
+  margin-top: 60px;
   display: flex;
   justify-content: center;
 }
@@ -228,13 +229,13 @@
 
 }
 
-.icon__nav li {
+.icon__nav i {
   width: 185px;
   padding: 30px 0;
   transition: all 0.5s;
 }
 
-.main__nav li:hover {
+.main__nav i:hover {
   background-color: #fff;
   transition: all 0.5s;
   cursor: pointer;
@@ -264,9 +265,9 @@
   margin: 0 auto;
 }
 
-
-.clearfix::after {
-  display: block;
-  content: "";
-  clear: both;
+.main {
+  padding-top: 70px;
 }
+
+
+

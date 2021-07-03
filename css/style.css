@@ -1,4 +1,4 @@
-/*共通-------------------------------------*/
+/*共通ーーーーーーーーーーーーーーー*/
 .bolt {
   background-color: #f2f2f2;
 }
@@ -11,13 +11,21 @@
 .main__bolt {
   padding-top: 70px;
 }
+
+
 /*header---------------------------------*/
 .header {
-  padding: 15px;
   position: fixed;
   background-color: #fff;
   width: 100%;
   z-index: 1;
+}
+
+.inner__header {
+  padding: 15px 0;
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
 }
 
 .fa-bolt {
@@ -29,12 +37,6 @@
   font-size: 1.5em;
 }
 
-.inner__header {
-  display: flex;
-  align-content: center;
-  justify-content: space-between;
-
-}
 
 .header a {
   background-color: #74cfae;
@@ -51,9 +53,14 @@
   cursor: pointer;
 }
 
+.header__ber {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  display: none;
+}
 
 
-  
 
 /*theme---------------------------------*/
 .theme {
@@ -68,6 +75,10 @@
   font-family: "Raleway";
 }
 
+.phone__br {
+  display: none;
+}
+
 .text__free {
   margin-top: 20px;
   font-size: 24px;
@@ -80,15 +91,19 @@
   padding-top: 50px;
 }
 
+.phone__box {
+  display: flex;
+}
+
 .phone__img {
   height: 295px;
-  width: 450px;
+  width: 40%;
 }
 
 
 .section__text {
   margin: 0 0 0 auto;
-  width: 650px;
+  width: 70%;
   line-height: 30px;
 }
 
@@ -107,10 +122,6 @@
   word-break: break-all;
 }
 
-.phone__box {
-  display: flex;
-}
-
 
 
   
@@ -121,6 +132,15 @@
   padding-bottom: 70px;
 }
 
+.text__article {
+  font-size: 24px;
+  font-family: "Raleway";
+}
+
+.article__img {
+  display: flex;
+  margin-top: 40px;
+}
 
 .img__box li {
   margin-top:80px;
@@ -148,22 +168,12 @@
   cursor: pointer;
 }
 
-.text__article {
-  font-size: 24px;
-  font-family: "Raleway";
-}
 
 .bottom__article {
   margin-top: 90px;
   display: flex;
   justify-content: center;
   align-items: flex-end;
-}
-
-.text__bottom {
-  width: 400px;
-  font-size: 12px;
-  line-height: 15px;
 }
 
 .bottom__article a {
@@ -173,6 +183,7 @@
   background-color: #74cfae;
   color: #fff;
   transition: all .3s;
+  text-decoration: none;
 }
 
 .bottom__article a:hover {
@@ -181,26 +192,20 @@
   cursor: pointer;
 }
 
-.article__img {
-  display: flex;
-  margin-top: 40px;
+.text__bottom {
+  width: 50%;
+  font-size: 12px;
+  line-height: 15px;
 }
 
 
 
 
 /*main3----------------------------------*/
-
 .main__section {
   background-color: #4e4e44;
   padding-top: 70px;
   padding-bottom: 100px;
-}
-
-.text__section {
-  font-size: 30px;
-  color: #fff;
-  font-family: "Raleway";
 }
 
 .main__section p {
@@ -208,6 +213,11 @@
   color: #fff;
 }
 
+.text__section {
+  font-size: 30px;
+  color: #fff;
+  font-family: "Raleway";
+}
 
 .section__box {
   margin-top: 60px;
@@ -218,8 +228,6 @@
 .section__box li:not(:first-of-type) {
   margin-left: 180px;
 }
-
-
 
 /*box4--------------------------------*/
 
@@ -236,7 +244,6 @@
 .main__nav a {
   color: #74cfae;
   font-size: 2.5em;
-  text-decoration: none;
 
 }
 
@@ -254,13 +261,11 @@
 
 
 
-
 /*footer-------------------------------*/
 .footer {
   background-color: #74cfae;
   padding-top: 20px;
   padding-bottom: 20px;
-
 }
 
 .footer p {
@@ -269,5 +274,123 @@
   color: #fff;
 }
 
+/*madia-TAB----------------------------------*/
+
+@media screen and (max-width:1199px) {
+  .inner {
+    width: 97%;
+  }
+
+  .section {
+    padding-bottom: 25px;
+  }
+  .phone__box {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section__text {
+    margin: 0 auto;
+  }
+
+  .text__what {
+    padding-top: 20px;
+  }
+  
+  .img__box li {
+    margin-top: 0;
+    margin-left: 0;
+    float: none;
+  }
+
+  .img__box li:nth-child(4) {
+    margin-top:80px;
+  }
+
+  .bottom__article {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin-top: 0;
+  }
+
+  .bottom__article a {
+    margin: 0;
+  }
+
+  .text__bottom {
+    margin-top: 80px;
+    margin-bottom: 40px;
+  }
+
+  .article__img {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .section__box {
+    flex-direction: column;
+  }
+  
+  .section__box li:not(:first-of-type) {
+    margin-left: 0;
+  }
+
+  .section__box li:not(:last-of-type) {
+    margin-bottom: 80px;
+  }
+
+
+}
+
+/*madia-pohone----------------------------------*/
+
+
+@media screen and (max-width:767px) {
+
+  .header__ber {
+    display: block;
+    }
+  
+  .header a {
+    display: none;
+  }
+
+  .theme {
+    padding-top: 160px;
+    padding-bottom: 130px;
+  }
+
+  .phone__br {
+    display: block;
+  }  
+  
+  .text__free {
+    font-size: 30px;
+  }
+  
+  .text__bolt {
+    font-size: 80px;
+  }
+
+  .main__nav {
+    padding: 50px 15px;
+  }
+
+  .icon__nav {
+    flex-direction: column;
+  }
+
+  .icon__nav i {
+    width: 100%;
+  }
+
+  .bottom__article a {
+    margin: 0;
+  }
+
+  
+    
+}
 
 

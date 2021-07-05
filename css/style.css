@@ -3,9 +3,9 @@
   background-color: #f2f2f2;
 }
 .inner {
-  text-align: center;
-  width: 1100px;
   margin: 0 auto;
+  width: 1100px;
+  text-align: center;
 }
 
 .main__bolt {
@@ -15,10 +15,10 @@
 
 /*header---------------------------------*/
 .header {
-  position: fixed;
-  background-color: #fff;
   width: 100%;
+  position: fixed;
   z-index: 1;
+  background-color: #fff;
 }
 
 .inner__header {
@@ -39,24 +39,37 @@
 
 
 .header a {
-  background-color: #74cfae;
-  color: #fff;
-  font-size: 12px;
   padding: 14px 12px;
-  transition: all 0.3s;
+  font-size: 12px;
   text-decoration: none;
+  transition: all 0.3s;
+  color: #fff;
+  background-color: #74cfae;
 }
 
 .header a:hover {
   transition: all 0.3s;
-  color: #333;
   cursor: pointer;
+  color: #333;
 }
 
 .header__ber {
   padding: 10px;
-  border: 1px solid #ddd;
   border-radius: 4px;
+  display: none;
+  border: 1px solid #ddd;
+}
+
+.line {
+	width: 25px;
+	height: 2px;
+  display: none;
+  color: #ddd;
+  background-color: #ddd;
+}
+
+.header__ber :not(:first-of-type) {
+  margin-top: 5px;
   display: none;
 }
 
@@ -64,15 +77,15 @@
 
 /*theme---------------------------------*/
 .theme {
-  padding-top: 250px; /*元250px*/
+  padding-top: 250px; 
   padding-bottom: 250px;
 }
 
 .text__bolt {
   font-size: 90px;
   font-weight: 700;
-  color: #74cfae;
   font-family: "Raleway";
+  color: #74cfae;
 }
 
 .phone__br {
@@ -87,8 +100,8 @@
 
 /*secotion-------------------------------------*/
 .section {
-  background-color: #74cfae;
   padding-top: 50px;
+  background-color: #74cfae;
 }
 
 .phone__box {
@@ -109,17 +122,17 @@
 
 .text__what {
   font-size: 24px;
-  color: #fff;
   text-align: center;
   font-family: "Raleway";
+  color: #fff;
 }
 
 .text__theme {
   margin-top: 35px;
   font-size: 20px;
-  color: #fff;
   text-align: center;
   word-break: break-all;
+  color: #fff;
 }
 
 
@@ -138,8 +151,8 @@
 }
 
 .article__img {
-  display: flex;
   margin-top: 40px;
+  display: flex;
 }
 
 .img__box li {
@@ -178,12 +191,12 @@
 
 .bottom__article a {
   margin-left: 90px;
-  font-size: 12px;
   padding: 14px 12px;
-  background-color: #74cfae;
-  color: #fff;
+  font-size: 12px;
   transition: all .3s;
   text-decoration: none;
+  color: #fff;
+  background-color: #74cfae;
 }
 
 .bottom__article a:hover {
@@ -203,9 +216,9 @@
 
 /*main3----------------------------------*/
 .main__section {
-  background-color: #4e4e44;
   padding-top: 70px;
   padding-bottom: 100px;
+  background-color: #4e4e44;
 }
 
 .main__section p {
@@ -215,8 +228,8 @@
 
 .text__section {
   font-size: 30px;
-  color: #fff;
   font-family: "Raleway";
+  color: #fff;
 }
 
 .section__box {
@@ -242,30 +255,30 @@
 }
 
 .main__nav a {
-  color: #74cfae;
   font-size: 2.5em;
+  color: #74cfae;
 
 }
 
 .icon__nav i {
-  width: 185px;
   padding: 30px 0;
+  width: 185px;
   transition: all 0.5s;
 }
 
 .main__nav i:hover {
-  background-color: #fff;
   transition: all 0.5s;
   cursor: pointer;
+  background-color: #fff;
 }
 
 
 
 /*footer-------------------------------*/
 .footer {
-  background-color: #74cfae;
   padding-top: 20px;
   padding-bottom: 20px;
+  background-color: #74cfae;
 }
 
 .footer p {
@@ -308,10 +321,10 @@
   }
 
   .bottom__article {
+    margin-top: 0;
     display: flex;
     flex-flow: column;
     align-items: center;
-    margin-top: 0;
   }
 
   .bottom__article a {
@@ -320,7 +333,10 @@
 
   .text__bottom {
     margin-top: 80px;
-    margin-bottom: 40px;
+  }
+
+  .bottom__article a {
+    margin-top: 40px;
   }
 
   .article__img {
@@ -333,11 +349,8 @@
   }
   
   .section__box li:not(:first-of-type) {
+    margin-top: 80px;
     margin-left: 0;
-  }
-
-  .section__box li:not(:last-of-type) {
-    margin-bottom: 80px;
   }
 
 
@@ -351,6 +364,15 @@
   .header__ber {
     display: block;
     }
+
+  .line {
+    display: block;
+  }
+
+  .header__ber :not(:first-of-type) {
+    display: block;
+  }
+
   
   .header a {
     display: none;

@@ -351,6 +351,10 @@
     margin-top: 80px;
   }
 
+  .section__box li:not(:first-of-type) {
+    margin-left: 0px;
+  }
+
 
 }
 
@@ -405,9 +409,6 @@
     width: 100%;
   }
 
-  .section__box li:not(:first-of-type) {
-    margin-left: 0px;
-  }
 
     
 }

@@ -12,7 +12,7 @@
   padding-top: 70px;
 }
 
-.header a ,.bottom__article a {
+.button__a {
   padding: 14px 12px;
   font-size: 12px;
   transition: all .3s;
@@ -21,7 +21,9 @@
   background-color: #74cfae;
 }
 
-
+a {
+  display: inline-block;
+}
 
 /*header---------------------------------*/
 .header {
@@ -48,7 +50,7 @@
 }
 
 
-.header a:hover {
+.button__a :hover {
   transition: all 0.3s;
   cursor: pointer;
   color: #333;
@@ -176,10 +178,6 @@
   margin-left: 0;
 }
 
-.img__box a {
-  display: block;
-}
-
 .bottom__article {
   margin-top: 90px;
   display: flex;
@@ -189,6 +187,7 @@
 
 .bottom__article a {
   margin-left: 90px;
+  display: block;
 }
 
 .bottom__article a:hover {
@@ -293,7 +292,7 @@
   }
 
   .section__text {
-    margin: 20px 0 ;
+    margin: 20px 0 0 ;
   }
 
   .img__box li {

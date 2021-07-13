@@ -297,7 +297,7 @@ a {
   }
 
   .img__box li:nth-child(3n+1) {
-    margin: 0 auto;
+    margin-left:auto;
   }
 
   .img__box li:nth-child(3n+4) {

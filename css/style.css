@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*共通ーーーーーーーーーーーーーーー*/
 .bolt {
   background-color: #f2f2f2;
@@ -25,6 +26,11 @@ a {
   display: inline-block;
 }
 
+.is__raleway {
+  font-family: "Raleway";
+
+}
+
 /*header---------------------------------*/
 .header {
   width: 100%;
@@ -40,7 +46,7 @@ a {
   justify-content: space-between;
 }
 
-.fa-bolt {
+.icon__bolt {
   color: #4e4e44;
   font-size: 2.0em;
 }
@@ -48,7 +54,6 @@ a {
 .size {
   font-size: 1.5em;
 }
-
 
 .button__a :hover {
   transition: all 0.3s;
@@ -80,14 +85,12 @@ a {
 
 /*theme---------------------------------*/
 .theme {
-  padding-top: 250px; 
-  padding-bottom: 250px;
+  padding: 250px 0 ; 
 }
 
 .text__bolt {
   font-size: 90px;
   font-weight: 700;
-  font-family: "Raleway";
   color: #74cfae;
 }
 
@@ -125,7 +128,6 @@ a {
 .text__what {
   font-size: 24px;
   text-align: center;
-  font-family: "Raleway";
   color: #fff;
 }
 
@@ -141,13 +143,11 @@ a {
 /*main2-----------------------------------*/
 
 .main__article {
-  padding-top: 60px;
-  padding-bottom: 70px;
+  padding: 60px 0 70px;
 }
 
 .text__article {
   font-size: 24px;
-  font-family: "Raleway";
 }
 
 .article__img {
@@ -156,8 +156,7 @@ a {
 }
 
 .img__box li {
-  margin-top:80px;
-  margin-left: 100px;
+  margin:80px 0 0 100px;
   float: left;
   font-size: 0;
   opacity: 0.7;
@@ -205,8 +204,7 @@ a {
 
 /*main3----------------------------------*/
 .main__section {
-  padding-top: 70px;
-  padding-bottom: 100px;
+  padding: 70px 0 100px;
   background-color: #4e4e44;
 }
 
@@ -217,7 +215,6 @@ a {
 
 .text__section {
   font-size: 30px;
-  font-family: "Raleway";
   color: #fff;
 }
 
@@ -234,8 +231,7 @@ a {
 /*box4--------------------------------*/
 
 .main__nav {
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding: 200px 0;
 }
 
 .icon__nav {
@@ -265,8 +261,7 @@ a {
 
 /*footer-------------------------------*/
 .footer {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 20px 0 ;
   background-color: #74cfae;
 }
 
@@ -296,9 +291,13 @@ a {
   }
 
   .img__box li {
-    margin-top: 0;
-    margin-left: 0;
+    margin: 0 auto;
+    width: 300px;
     float: none;
+  }
+
+  .img__box li:nth-child(3n+1) {
+    margin: 0 auto;
   }
 
   .img__box li:nth-child(3n+4) {
@@ -363,8 +362,7 @@ a {
   }
 
   .theme {
-    padding-top: 160px;
-    padding-bottom: 130px;
+    padding-top: 160px 0 130px;
   }
 
   .phone__br {
@@ -377,6 +375,10 @@ a {
   
   .text__bolt {
     font-size: 80px;
+  }
+
+  .text__bottom {
+    width: 80%;
   }
 
   .main__nav {

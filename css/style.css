@@ -362,15 +362,20 @@ a {
   }
 
   .theme {
-    padding-top: 160px 0 130px;
+    padding: 160px 0 130px;
   }
 
   .phone__br {
     display: block;
   }  
-  
+
   .text__free {
+    line-height: 35px;
     font-size: 30px;
+  }
+
+  .section__text {
+    width: 80%;
   }
   
   .text__bolt {
